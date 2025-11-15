@@ -13,7 +13,7 @@ router.set('trust proxy', true)
 
 router.post("/guestbook/submit-entry", async (req, res) => {
   try {
-    await addEntry(req.body, "MD5 HASH");
+    await addEntry(req.body, (getHash(req.ip)));
     res.status(201).send(req.body);
   } catch (error) {
     console.error("Error adding entry:", error);
@@ -92,9 +92,11 @@ getEntries();
 
 /* END entry logic */
 
-
-function getMd5Hash(str) {
-  return ("WIP");
+const { createHash } = require('node:crypto');
+function getHash(str) {
+  const hash = createHash('sha256');
+  hash.update(str);
+  return(hash.digest('hex'));
 }
 
 // async function rawr(){console.log(await getEntryCount())}
