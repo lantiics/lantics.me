@@ -90,7 +90,13 @@ async function getEntries() {
   return entryList;
 }
 getEntries();
+
 /* END entry logic */
+
+
+function getMd5Hash(str) {
+  return ("WIP");
+}
 
 // async function rawr(){console.log(await getEntryCount())}
 // rawr()
