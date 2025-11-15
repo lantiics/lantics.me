@@ -14,7 +14,7 @@ router.set('trust proxy', true)
 
 router.post("/guestbook/submit-entry", async (req, res) => {
   try {
-    await addEntry(req.body, "not implemented");
+    await addEntry(req.body, "MD5 HASH");
     res.status(201).send(req.body);
   } catch (error) {
     console.error("Error adding entry:", error);
