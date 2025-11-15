@@ -3,7 +3,6 @@ const req = require("express/lib/request");
 const mariadb = require("mariadb");
 const morgan = require("morgan");
 require("dotenv").config({ path: [".env.local"] });
-// const axios = require("axios");
 const router = express();
 router.use(express.json());
 router.set('trust proxy', true)
