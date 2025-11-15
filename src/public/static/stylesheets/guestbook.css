@@ -1,0 +1,99 @@
+.guestbook-input-container {
+  min-height: 10rem;
+  max-height: 11rem;
+  overflow-x: hidden;
+}
+.guestbook-input {
+  background: #111;
+  color: #e3e3e3;
+  font-family: monospace;
+  margin-top: 1rem;
+  padding: 4px;
+  width: 90%;
+  height: 4rem;
+  font-size: large;
+  resize: none;
+  outline: unset;
+  border: unset;
+}
+.guestbook-input-submit {
+  background: #111;
+  padding: 4px;
+
+  border: unset;
+  color: #e3e3e3;
+  font-weight: 600;
+  font-family: monospace;
+}
+.guestbook-input-submit:hover {
+  background: #1b1b1b;
+}
+.guestbook-input-submit:active {
+  background: #0f0f0f;
+}
+.guestbook-name-input {
+  background: #111;
+  border: none;
+  font-size: large;
+  font-family: monospace;
+  padding: 4px;
+  color: #e3e3e3;
+  outline: none;
+}
+.guestbook-wall {
+  display: grid;
+  grid-auto-rows: 100%;
+  padding: 4px;
+  /* padding-block: 9px; */
+  padding-bottom: 4px;
+  gap: 8px;
+  margin-top: 2rem;
+  min-height: 100px;
+  width: 90%;
+  height: fit-content;
+  border: #e3e3e3;
+  background-color: #111;
+}
+.guestbook-wall-entry {
+  overflow-wrap: anywhere;
+  display: grid;
+  width: 98%;
+  padding: 4px;
+  justify-self: start;
+  min-height: 6rem;
+  height: fit-content;
+  background-color: #0b0b0b;
+}
+.guestbook-wall-entry .guestbook-wall-entry-name {
+  margin-left: 2px;
+  margin-top: 2px;
+  font-size: larger;
+  max-width: 90%;
+  padding: 2px;
+  width: fit-content;
+  height: fit-content;
+  border-color: aqua;
+  border-width: 3px;
+}
+.guestbook-wall-entry .guestbook-wall-entry-content {
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.guestbook-wall-entry-error {
+  width: 98%;
+  padding: 4px;
+  justify-self: start;
+  min-height: 6rem;
+  font-size: large;
+  height: 80%;
+  background-color: #0b0b0b;
+}
+.guestbook-wall-entry-id {
+  font-size: smaller;
+  align-self: self-end;
+  margin-bottom: 2px;
+  margin-right: 5px;
+  width: fit-content;
+  justify-self: right;
+}

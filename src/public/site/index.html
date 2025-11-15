@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lantics' site</title>
+    <link rel="me" href="https://masto.nu/@lantics" />
+    <meta name="description" content="hi, i&#39;m lantics." />
+    <meta property="og:title" content="lantics&#39; site" />
+    <meta property="og:description" content="hi, i&#39;m lantics." />
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <link rel="stylesheet" href="/stylesheets/rawr.css" />
+  </head>
+  <body>
+    <header class="header">
+      <span
+        onclick="toggleNav()"
+        style="cursor: pointer; justify-self: end; font-size: larger"
+        class="only-show-mobile"
+        >&#9776;</span
+      >
+      <nav class="nav mobile-hidden">
+        <a href="/" class="header-link active-header-link nolink">lantics.me</a>
+        <a href="/contact" class="header-link nolink">contact</a>
+        <a href="/guestbook" class="header-link nolink">guestbook</a>
+      </nav>
+      <div id="nav-menu" class="nav-menu-overlay">
+        <div class="nav-menu-overlay-content">
+          <ul style="list-style: none; padding: 0">
+            <li>
+              <a href="/" class="nav-menu-active-link nav-menu-link"
+                >lantics.me</a
+              >
+            </li>
+            <li><a href="/contact" class="nav-menu-link">contact</a></li>
+            <a href="/guestbook" class="nav-menu-link">guestbook</a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main ncg-grid">
+      <div class="home-upper">
+        <div>
+          <div id="introduction" style="height: fit-content">
+            <img src="/images/av.webp" class="avatar" />
+            <h2 class="desktop-xx-lgtxt">
+              <span style="width: 300px"
+                >heya, i'm
+                <span id="introduction-name" class="pastel-purple">lantics</span
+                >.</span
+              >
+              <br />i do things, probably.
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="overflow-wrap: anywhere" class="mobile-hidden">
+          <p>
+            <a href="/889AD2715187F584.asc" class="nolink grey-link-wh"
+              >F49AEEA139DA4C457793AEDB889AD2715187F584</a
+            >
+            &lt;master signing&gt;<br /><a
+              href="/6424EFABC96B2F72.asc"
+              class="nolink grey-link-wh"
+              >FD6EBAD59AC37FA47A19AC4E6424EFABC96B2F72</a
+            >
+            &lt;sign/encrypt&gt;<br /><span style="font-size: x-small"
+              >the keys listed above do not have any specific uses (i.e,
+              email)<br />while verifying signatures, unless stated otherwise,
+              the master signing key takes priority.<br />these keys are also
+              uploaded to the
+              <a href="https://keyserver.ubuntu.com" class="nolink grey-link-wh"
+                >ubuntu keyserver</a
+              ></span
+            >.
+          </p>
+        </div>
+        <div>
+          <p>
+            i feel like the best thing about having my own little space on the
+            internets is i can do whatever i want with it and that's fun.<br /><br />
+            i dabble in the art of programming occasionally. atm this website is
+            just smth i fiddle with since i don't quite have any cool project
+            ideas.
+          </p>
+          <p>
+            i took my pfp from
+            <a href="https://x.com/cco00oo">olyester (cco00oo)</a> without their
+            consent. they make cool art go look at it.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h1
+        style="
+          text-align: center;
+          font-size: medium;
+          position: absolute;
+          bottom: 1rem;
+          left: 0px;
+          width: 100vw;
+        "
+        class="mobile-hidden"
+      >
+        b8cafbae62a94815643bbb740b55828358a0cb74d18062d46123e436d867d8a3
+      </h1>
+    </footer>
+    <script src="/js/home-name.js"></script>
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

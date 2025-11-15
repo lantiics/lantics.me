@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>lantics' site</title>
+    <meta name="description" content="hi, i&#39;m lantics." />
+    <meta property="og:title" content="lantics&#39; site" />
+    <meta property="og:description" content="hi, i&#39;m lantics." />
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+    <link rel="stylesheet" href="/stylesheets/rawr.css" />
+    <link rel="stylesheet" href="/stylesheets/guestbook.css" />
+    <link rel="preload" href="/js/guestbook.js" as="script" />
+  </head>
+
+  <body>
+    <header class="header">
+      <span
+        onclick="toggleNav()"
+        style="cursor: pointer; justify-self: end; font-size: larger"
+        class="only-show-mobile"
+        >&#9776;</span
+      >
+      <nav class="nav mobile-hidden">
+        <a href="/" class="header-link nolink">lantics.me</a>
+        <a href="/contact" class="header-link nolink">contact</a>
+        <a href="/guestbook" class="header-link active-header-link nolink"
+          >guestbook</a
+        >
+      </nav>
+      <div id="nav-menu" class="nav-menu-overlay">
+        <div class="nav-menu-overlay-content">
+          <ul style="list-style: none; padding: 0">
+            <li><a href="/" class="nav-menu-link">lantics.me</a></li>
+            <li><a href="/contact" class="nav-menu-link">contact</a></li>
+            <a href="/guestbook" class="nav-menu-active-link nav-menu-link"
+              >guestbook</a
+            >
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="main ncg-grid">
+      <div>
+        <h1>guestbook</h1>
+      </div>
+      <div>
+        <div class="guestbook-container" id="guestbook-container">
+          <form id="entry-form">
+            <div class="guestbook-input-container">
+              <label>make an entry:</label><br /><br />
+              <input
+                id="name-input"
+                name="name"
+                class="guestbook-name-input"
+                placeholder="name (optional)"
+              />
+              <textarea
+                name="content"
+                required="true"
+                class="guestbook-input"
+                id="entry-input"
+                rows="4"
+                wrap="hard"
+                spellcheck="false"
+                placeholder="introduce yourself"
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="submit"
+              id="entry-submit"
+              class="guestbook-input-submit"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="guestbook-wall" id="guestbook-wall"></div>
+    </main>
+    <footer></footer>
+    <script src="/js/menu.js"></script>
+    <script src="/js/guestbook.js" defer></script>
+  </body>
+</html>
