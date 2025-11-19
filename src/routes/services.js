@@ -65,7 +65,7 @@ async function getEntryCount() {
     let [rows] = await pool.query(
       "SELECT * FROM guestbook ORDER BY entryId DESC LIMIT 1"
     );
-    // console.log()
+
     num = rows.entryId;
     console.log(parseInt(num));
     return await parseInt(num);
@@ -82,9 +82,6 @@ async function getEntries() {
     if(entry.hidden!=1){entryList[entry.entryId] = { name: entry.name, content: entry.content };}
   });
 
-  // let entryListObj = JSON.parse(entryList);
-  // console.log(entries)
-  // entryList=JSON.stringify(entryListObj)
   console.log(entryList);
   return entryList;
 }
