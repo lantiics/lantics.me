@@ -1,8 +1,5 @@
 const express = require("express");
 const req = require("express/lib/request");
-if (process.env.PROD === "TRUE") {
-  const mariadb = require("mariadb");
-}
 const morgan = require("morgan");
 require("dotenv").config({ path: [".env.local"] });
 const router = express();
@@ -16,6 +13,7 @@ const production_status = process.env.PROD;
 /* START mariadb required */
 
 if (production_status === "TRUE") {
+  const mariadb = require("mariadb");
   /* START mariadb routing */
 
   /* POST guestbook entry */
