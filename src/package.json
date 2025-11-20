@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "PORT=2999 nodemon ./bin/www"
+    "start": "PORT=2999 PROD=TRUE nodemon ./bin/www",
+    "dev": "PORT=7999 PROD=FALSE nodemon ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
