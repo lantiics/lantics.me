@@ -42,7 +42,6 @@
 }
 .guestbook-wall {
   display: grid;
-  grid-auto-rows: 100%;
   padding: 4px;
   /* padding-block: 9px; */
   padding-bottom: 4px;
